@@ -24,10 +24,14 @@ export class Price extends Component {
 
   componentWillMount() {
     // Set the rating text depending on the rating
-    this.setRatingText(this.props);
+    this.setRatings(this.props);
   }
 
-  setRatingText = (props) => {
+  /**
+   * Set ratings
+   * @param {Object} props
+   */
+  setRatings = (props) => {
     // Rating text corresponding the rating value
     const ratings = {
       0: 'No ratings',

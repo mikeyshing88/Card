@@ -22,9 +22,6 @@ export class Info extends Component {
 
   displayName = 'Info';
 
-  componentWillMount() {
-  }
-
   render() {
     return (
       <div className={css.infoContainer}>
