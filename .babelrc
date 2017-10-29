@@ -5,6 +5,7 @@
     "babel-preset-stage-0"
   ],
   "plugins": [
+    "jsx-control-statements",
     "transform-runtime",
     "babel-plugin-transform-decorators-legacy"
   ]

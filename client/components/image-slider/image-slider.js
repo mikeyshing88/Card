@@ -11,8 +11,37 @@ export class ImageSlider extends Component {
 
   displayName = 'ImageSlider';
 
+  state = {
+    noOfImages: 0,
+    slideIndex: 0
+  }
+
+  componentWillMount() {
+    this.setState({ noOfImages: this.props.images.length });
+  }
+
+  nextSlide = () => {
+    // Change to next image slide - unless user is on the last image
+    // then change back to the initial image slide
+    this.setState({
+      slideIndex: (this.state.slideIndex === (this.state.noOfImages - 1))
+        ? 0
+        : this.state.slideIndex + 1
+    });
+  }
+
+
+  prevSlide = () => {
+    // Change to previous image slide - unless user is on the first image
+    // then change back to the last image slide
+    this.setState({
+      slideIndex: (this.state.slideIndex === 0)
+        ? this.state.noOfImages - 1
+        : this.state.slideIndex - 1
+    });
+  }
+
   render() {
-    console.log(this.props.images);
     return (
       <div
         className={cx(
@@ -22,14 +51,32 @@ export class ImageSlider extends Component {
       >
         {this.props.images.map((image, index) => {
           return (
-            <img
-              key={index}
-              className={css.imageSliderContainerImage}
-              src={`client/assets/img/${image}.jpg`}
-              alt="House home"
-            />
+            <If condition={this.state.slideIndex === index}>
+              <img
+                key={index}
+                className={css.imageSliderContainerImage}
+                src={`client/assets/img/${image}.jpg`}
+                alt="House home"
+              />
+            </If>
           );
         })}
+        <div
+          className={css.imageSliderContainerChevronRight}
+          role="presentation"
+          onClick={this.nextSlide}
+          onKeyPress={this.nextSlide}
+        >
+          <i className="icon-chevron-right" />
+        </div>
+        <div
+          className={css.imageSliderContainerChevronLeft}
+          role="presentation"
+          onClick={this.prevSlide}
+          onKeyPress={this.prevSlide}
+        >
+          <i className="icon-chevron-left" />
+        </div>
       </div>
     );
   }
