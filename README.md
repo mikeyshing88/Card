@@ -24,9 +24,10 @@ yarn start
 | Task                | Usage                                                        |
 | ------------------- | ------------------------------------------------------------ |
 | `npm run start` or `yarn start`     | Opens local server |
+| `npm run build` or `yarn build`     | Builds production |
 
 
-## 📁 <a name="directory">Directory Structure</a>
+## <a name="directory">Directory Structure</a>
 
 ```
 
