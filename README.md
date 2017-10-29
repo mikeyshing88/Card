@@ -27,7 +27,7 @@ yarn start
 | `npm run build` or `yarn build`     | Builds production |
 
 
-## 📁 <a name="directory">Directory Structure</a>
+## <a name="directory">Directory Structure</a>
 
 ```
 
