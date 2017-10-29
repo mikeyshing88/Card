@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --inline --hot"
+    "start": "webpack-dev-server --open --inline --hot",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "autoprefixer": "^7.1.6",
