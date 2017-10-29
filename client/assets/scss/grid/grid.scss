@@ -1,8 +1,12 @@
 // Basic grid
 .grid {
   display: block;
-  float: left;
-  height: 100%;
+  float: none;
+
+  @media screen and (min-width: 481px) {
+    float: left;
+    height: 100%;
+  }
 }
 
 .grid--col-16 {

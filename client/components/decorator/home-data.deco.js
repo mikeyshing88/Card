@@ -1,6 +1,10 @@
 import React from 'react';
 import 'whatwg-fetch';
 
+/**
+ * Private check status function for fetch usage
+ * @param {number} response
+ */
 function checkStatus(response) {
   if (response.status >= 200 && response.status < 300) {
     return response;
@@ -12,16 +16,20 @@ function checkStatus(response) {
   throw error;
 }
 
+/**
+ * Fetch polyfill with HTTP status error
+ * @param {string} path File path or URL
+ */
 export const utilFetch = (path) => {
   return fetch(path, { credentials: 'same-origin' }).then(checkStatus);
 };
+
 
 function HomeDataDecorator(ComposedComponent) {
   return class HomeDataClass extends React.Component {
     /**
      * Get JSON data
-     * @param  {String, string} variant, packageId
-     * @return {Object} optionsToRender
+     * @return {Object} dataToRender
      */
     async getHomeJsonData() {
       const jsonPath = '/client/assets/data/home.json';

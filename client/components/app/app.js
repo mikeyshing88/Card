@@ -14,13 +14,12 @@ export default class App extends Component {
   }
 
   /**
-   * Set current page option data into the state
+   * Set the homes data
    * @param  {Object} props
    */
   setHomeData = (props) => {
     props.getHomeJsonData()
       .then((result) => {
-        console.log(result, '1');
         this.setState({
           data: Object.keys(result).map(data => [result[data]])
         });
@@ -28,7 +27,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.data);
     return (
       <div>
         {this.state.data.map((individualHome, index) => {

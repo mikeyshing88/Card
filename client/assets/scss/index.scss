@@ -2,9 +2,18 @@
 @import './typography/typography.scss';
 
 body {
-  width: 100%;
+  width: 260px;
   margin: 0 auto;
+  padding: 0;
   font-family: 'roboto_regular';
+
+  @media screen and (min-width: 480px) {
+    width: 295px;
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;

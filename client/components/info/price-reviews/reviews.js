@@ -25,6 +25,10 @@ export class Price extends Component {
     this.setStarRating(this.props);
   }
 
+  /**
+   * Set star ratings
+   * @param {Object} props
+   */
   setStarRating = (props) => {
     // Get the number of reviews
     const reviewLength = Object.keys(this.props.reviews).length;

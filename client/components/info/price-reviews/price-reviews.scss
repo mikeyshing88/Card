@@ -1,19 +1,39 @@
 .price-reviews-container {
-  display: flex;
-  align-items: flex-end;
+  @media screen and (min-width: 481px) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .price-reviews-container__price {
-  flex: 1 0 auto;
+  @media screen and (min-width: 481px) {
+    flex: 1 0 auto;
+  }
 }
-
 .price-reviews-container__reviews {
-  flex: 1 0 auto;
+  @media screen and (min-width: 481px) {
+    flex: 1 0 auto;
+  }
 }
 
 .price-container__rating {
-  margin-bottom: 4px;
-  color: #00CC00;
+  display: none;
+
+  @media screen and (min-width: 481px) {
+    display: block;
+    margin-bottom: 4px;
+    color: #00CC00;
+  }
+}
+
+.price-reviews-container__review {
+  margin-top: 8px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 481px) {
+    margin-top: initial;
+    margin-bottom: initial;
+  }
 }
 
 .reviews-container__stars {
