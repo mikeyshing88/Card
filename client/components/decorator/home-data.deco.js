@@ -1,5 +1,9 @@
 import React from 'react';
 import 'whatwg-fetch';
+import { polyfill } from 'es6-promise';
+
+// Run ES6 Promise polyfill (for IE)
+polyfill();
 
 /**
  * Private check status function for fetch usage
@@ -34,8 +38,6 @@ function HomeDataDecorator(ComposedComponent) {
     async getHomeJsonData() {
       const jsonPath = '/client/assets/data/home.json';
       let dataToRender;
-
-      console.log(jsonPath);
 
       function fetchData(path) {
         return utilFetch(path).then((res) => {
