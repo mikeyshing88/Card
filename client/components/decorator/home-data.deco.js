@@ -49,7 +49,6 @@ function HomeDataDecorator(ComposedComponent) {
       }
 
       await fetchData(jsonPath).then((res) => {
-        console.log(res);
         const homeData = res;
 
         dataToRender = homeData;
