@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Luxury, downtown location w pool & spa in coveted Clarksville. Walk just about...",
+    "features": {
+      "noOfPeople": "6",
+      "bedrooms": "3",
+      "bathrooms": "3.5"
+    },
+    "price": "$862",
+    "images": [
+      "home-1",
+      "home-2"
+    ],
+    "rating": {
+      "stars": "4.9",
+      "reviews": [
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        },
+        {
+          "description": "lorem"
+        }
+      ]
+    }
+  }
+]
