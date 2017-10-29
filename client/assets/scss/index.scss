@@ -1,0 +1,23 @@
+@import './grid/grid.scss';
+@import './typography/typography.scss';
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'roboto_regular';
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+}
+
+.icon-star {
+  margin-right: 5px;
+}
+.icon-star.positive {
+  color: #FFE240;
+}
+
+.icon-star.negative {
+  color: #999999;
+}

@@ -1,0 +1,17 @@
+.card-container {
+  margin-top: 50px;
+  height: 248px;
+  box-shadow: 4px 4px 17px 2px #D2D2D2;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card-container__image {
+  width: 45%;
+}
+
+.card-container__info {
+  width: 55%;
+}

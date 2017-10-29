@@ -1,0 +1,30 @@
+.info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.info-container__inner {
+  padding: 24px 16px;
+}
+
+.info-container__title {
+  padding-top: 24px;
+  flex: 0 0 auto;
+}
+
+.info-container__features {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.info-container__price-reviews {
+  padding-bottom: 24px;
+  flex: 0 0 auto;
+  align-self: stretch;
+}

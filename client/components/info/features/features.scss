@@ -1,0 +1,38 @@
+.features-container {
+  display: flex;
+  width: 70%;
+}
+
+.features-container__amount {
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: .1em;
+}
+
+.features-container__bedrooms {
+  margin: 0 15px;
+  padding: 0 15px;
+  position: relative;
+
+  &:after {
+    content: ' ';
+    background: #d7d8da;
+    width: 1px;
+    display: block;
+    height: 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:before {
+    content: ' ';
+    background: #d7d8da;
+    width: 1px;
+    display: block;
+    height: 1.5em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

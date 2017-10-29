@@ -1,0 +1,27 @@
+.price-reviews-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.price-reviews-container__price {
+  flex: 1 0 auto;
+}
+
+.price-reviews-container__reviews {
+  flex: 1 0 auto;
+}
+
+.price-container__rating {
+  margin-bottom: 4px;
+  color: #00CC00;
+}
+
+.reviews-container__stars {
+  float: left;
+  padding-top: 3px;
+}
+
+.reviews-container__review {
+  margin-left: 8px;
+  float: left;
+}
