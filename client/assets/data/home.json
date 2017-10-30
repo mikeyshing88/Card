@@ -46,5 +46,44 @@
         }
       ]
     }
+  },
+{
+  "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...",
+  "features": {
+    "noOfPeople": "1",
+    "bedrooms": "10",
+    "bathrooms": "2"
+  },
+  "price": "$75",
+  "images": [
+    "home-3",
+    "home-4"
+  ],
+  "rating": {
+    "stars": "2",
+    "reviews": [
+      {
+        "description": "lorem"
+      },
+      {
+        "description": "lorem"
+      },
+      {
+        "description": "lorem"
+      },
+      {
+        "description": "lorem"
+      },
+      {
+        "description": "lorem"
+      },
+      {
+        "description": "lorem"
+      },
+      {
+        "description": "lorem"
+      }
+    ]
   }
+}
 ]
